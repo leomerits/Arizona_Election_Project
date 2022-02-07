@@ -2,7 +2,7 @@
 
 ## Selected Topic
 
-The GETZ group project will be executing an analysis of Arizona's six politically competitive legislative districts. We define "politically competitive" as districts where both Democrats and Republicans have a virtually equal shot at winning the race. We picked the six competitive legislative as our topic given that is where most of both parties resources will be invested on a state level this election and as a result, where our predictive model will have the most impact on Arizona's democracy. In the ballpark of 120,000 registered voters consising of Republicans, Democrats and Independents reside in each of the six districts.
+The GETZ group project will be executing an analysis of Arizona's six politically competitive legislative districts. We define "politically competitive" as districts where both Democrats and Republicans have a virtually equal shot at winning the race. We picked the six competitive legislative as our topic given that is where most of both parties resources will be invested on a state level this election and as a result, where our predictive model will have the most impact on Arizona's democracy. In the ballpark of 120,000 registered voters consisting of Republicans, Democrats and Independents reside in each of the six districts.
 
 ## Why We Selected This Topic
 
