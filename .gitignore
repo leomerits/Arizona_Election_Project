@@ -68,8 +68,6 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-#Sensitive:
-config.py
 # Sphinx documentation
 docs/_build/
 
@@ -111,6 +109,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# sensitive
+config.py
 
 # Spyder project settings
 .spyderproject
