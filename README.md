@@ -1,8 +1,17 @@
 # Arizona_Election_Project
 
+# Outline of the Project
+-	What is our Topic
+-	Why we selected our topic
+-	We started with describing our Data Source (which was from the Arizona Democratic Party)
+-	Questions We Hope To answer 
+-	Description of our Data Exploration: We cleaned and saved our datasets in multiple ways to fit different types of ML that we applied to our Datasets. And we also transferred and saved the tables to our pgAdmin Database from where we imported them for analysis.
+-	Data Analysis: We performed several ML so as to get a better result as was shown on the python notebooks we have.
+
+
 ## Selected Topic
 
-The GETZ group project will be executing an analysis of Arizona's six politically competitive legislative districts. We define "politically competitive" as districts where both Democrats and Republicans have a virtually equal shot at winning the race. We picked the six competitive legislative as our topic given that is where most of both parties resources will be invested on a state level this election and as a result, where our predictive model will have the most impact on Arizona's democracy. In the ballpark of 120,000 registered voters consising of Republicans, Democrats and Independents reside in each of the six districts.
+The GETZ group project will be executing an analysis of Arizona's six politically competitive legislative districts. We define "politically competitive" as districts where both Democrats and Republicans have a virtually equal shot at winning the race. We picked the six competitive legislative as our topic given that is where most of both parties resources will be invested on a state level this election and as a result, where our predictive model will have the most impact on Arizona's democracy. In the ballpark of 120,000 registered voters consisting of Republicans, Democrats and Independents reside in each of the six districts.
 
 ## Why We Selected This Topic
 
@@ -36,6 +45,9 @@ The primary data source for this project will be the proprietary statewide voter
 
 In the execution of this project and our machine learning models, we hope to answer the following questions:
 
- - We hope to determine and classify which voters in each district are likely to be a split-ticket voters (willing to vote for both parties). In doing so, we would apply a binary classification predictive model with logistic regression(??).
+ - We hope to determine and classify which voters in each district are likely to be a split-ticket voters. In doing so, we would apply a binary classification predictive model with logistic regression.
  - We also hope to predict which voters of each of the six districts are likely to turn out in the 2022 election. We would likely do this as well with employing a binary classification predictive model with logistic regression. On another level, we hope to predict the likely percentage of voters in each district and the demographic composition to turnout in the 2022 election. 
- - (Do I need to say specifically what our target column will be? I say what we want answered above but should I use the target language?)
+
+## Communication Protocol.
+-	Incase of emergency, we all have each other’s cell number.
+-	The team communication consists of communicating daily over our Getz_Team Slack channel. In addition to that we have been meeting over Zoom multiple times (at least four times a week including the Mondays and Wednesdays classes) Also, we have been meeting in teams of twos when needed, for instance Franklin and Darlington, Franklin and Raymond, Franklin and Josh had met in few other times besides the normal scheduled times. 
