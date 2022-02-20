@@ -47,4 +47,8 @@ In the execution of this project and our machine learning models, we hope to ans
 
  - We hope to determine and classify which voters in each district are likely to be a split-ticket voters. In doing so, we would apply a binary classification predictive model with logistic regression.
  - We also hope to predict which voters of each of the six districts are likely to turn out in the 2022 election. We would likely do this as well with employing a binary classification predictive model with logistic regression. On another level, we hope to predict the likely percentage of voters in each district and the demographic composition to turnout in the 2022 election. 
- 
+
+## Communication Protocol.
+-	Incase of emergency, we all have each other’s cell number.
+-	The team communication consists of communicating daily over our Getz_Team Slack channel. In addition to that we have been meeting over Zoom multiple times (at least four times a week including the Mondays and Wednesdays classes) Also, we have been meeting in teams of twos when needed, for instance Franklin and Darlington, Franklin and Raymond, Franklin and Josh had met in few other times besides the normal scheduled times. 
+
