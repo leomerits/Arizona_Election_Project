@@ -82,7 +82,7 @@ As a result, we learned a great deal about voters in our district, especially wh
 
 ![Mean_Ethnicity_Swing](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Mean_SwingVoterScore_Ethnicity.PNG)
 
-The graph above demonstrates that far and away "Caucasion" and "Uncoded"(meaning unknown) voters have a mean "Voter Scores" most aligned with what has been defined as a Swing Voter. This does not mean that every Caucasion or Uncoded voter are Swing Voters, rather that White voters have the largest range of "Voter Scores" compared to Hispanic, Black, Native American and Asian voters. This is true because Black and Hispanic voters heavily skew towards the Democratic party. If you look at registration numbers, Black and Hispanic voters are registered with the Democratic Party 91 and 67 percent respectively.
+The graph above demonstrates that far and away "Caucasian" and "Uncoded"(meaning unknown) voters have a mean "Voter Scores" most aligned with what has been defined as a Swing Voter. This does not mean that every Caucasion or Uncoded voter are Swing Voters, rather that White voters have the largest range of "Voter Scores" compared to Hispanic, Black, Native American and Asian voters. This is true because Black and Hispanic voters heavily skew towards the Democratic party. If you look at registration numbers, Black and Hispanic voters are registered with the Democratic Party 91 and 67 percent respectively.
 
 ![Swing_Party_Sex](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/SwingVoter_Age_Party.PNG)
 
