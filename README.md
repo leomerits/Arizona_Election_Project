@@ -1,5 +1,13 @@
 # Arizona_Election_Project
 
+# Outline of the Project
+-	What is our Topic
+-	Why we selected our topic
+-	We started with describing our Data Source (which was from the Arizona Democratic Party)
+-	Questions We Hope To answer 
+-	Description of our Data Exploration: We cleaned and saved our datasets in multiple ways to fit different types of ML that we applied to our Datasets. And we also transferred and saved the tables to our pgAdmin Database from where we imported them for analysis.
+-	Data Analysis: We performed several ML so as to get a better result as was shown on the python notebooks we have.
+
 ## Selected Topic
 
 The GETZ group project will be executing an analysis of Arizona's four politically competitive legislative districts. We define "politically competitive" as districts where both Democrats and Republicans have a virtually equal shot at winning the race. We picked the four competitive legislative as our topic given that is where most of both parties resources will be invested on a state level this election and as a result, where our predictive model will have the most impact on Arizona's democracy. In the ballpark of 120,000 registered voters consising of Republicans, Democrats and Independents reside in each of the four districts.
@@ -88,6 +96,6 @@ This graph above looks at the relationship between number of Swing Voters fall i
 
 ## Communication Protocal
 
- - In case of emergency, contact Josh
- - The team communication will consist of communicating daily over our Getz_Team Slack channel. Additionally, we will meet over Zoom four times a week including the Monday and Wednesday classes.
- - 
+-	Incase of emergency, we all have each other’s cell number.
+-	The team communication consists of communicating daily over our Getz_Team Slack channel. In addition to that we have been meeting over Zoom multiple times (at least four times a week including the Mondays and Wednesdays classes) Also, we have been meeting in teams of twos when needed, for instance Franklin and Darlington, Franklin and Raymond, Franklin and Josh had met in few other times besides the normal scheduled times. 
+
