@@ -1,0 +1,17 @@
+
+CREATE TABLE District_9 (
+    VoterID int NOT NULL,
+    PartyName varchar  NOT NULL ,
+    Sex varchar  NOT NULL ,
+    Age int  NOT NULL ,
+    Ethnicity varchar  NOT NULL ,
+    PartisanScore numeric  NOT NULL ,
+    NatTo numeric  NOT NULL ,
+    Partisanship numeric  NOT NULL ,
+    2020:CivKidsinHH numeric  NOT NULL ,
+    2020:CivLibIdeo numeric  NOT NULL ,
+    2020:CivMarriage numeric  NOT NULL ,
+    Zip5 int  NOT NULL
+);
+
+SELECT* FROM Public.district_9
