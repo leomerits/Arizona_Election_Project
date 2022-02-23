@@ -109,8 +109,8 @@ Click here to view our code: [Legislative_Districts_MachineLearning](https://git
 
 ## DataBase Images:
 Primary Key set up:
+<img width="368" alt="primarykeysetup" src="https://user-images.githubusercontent.com/90356052/155256559-45425e66-2731-456b-8b72-e818b75eeadf.png">
 
-primarykeysetup.png
 ## Google Slides
 
 Click here for initial draft of Google Slides draft of presentation (Please note this is an early, early draft): [Dashboard mockup](https://docs.google.com/presentation/d/1niBqt4rMpW65NBb7cFWH2UJPZE_gq36iIZQ91IrVoC0/edit#slide=id.g1147b030573_0_1) | [Draft Presentation](https://docs.google.com/presentation/d/1kg2Wtakuq2NBjBmaiVa10OS5loL1bqqo6kbOCEo29Kk/edit#slide=id.p)
