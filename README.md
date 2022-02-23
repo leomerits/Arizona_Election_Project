@@ -109,7 +109,12 @@ Click here to view our code: [Legislative_Districts_MachineLearning](https://git
 
 ## DataBase Images:
 Primary Key set up:
+
 <img width="368" alt="primarykeysetup" src="https://user-images.githubusercontent.com/90356052/155256559-45425e66-2731-456b-8b72-e818b75eeadf.png">
+
+two table set up:
+
+<img width="502" alt="Screen Shot 2022-02-22 at 8 21 52 PM" src="https://user-images.githubusercontent.com/90356052/155256860-f0ba399b-bd93-46a3-bb7b-8ead06c1bf7b.png">
 
 ## Google Slides
 
