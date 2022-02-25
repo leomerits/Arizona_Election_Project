@@ -90,11 +90,15 @@ The graph above illustrates another critical element about Swing Voters in our d
 
 ![Swing_Age](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Swing%20Voter_Age.png)
 
-This graph above looks at the relationship between number of Swing Voters fall in each age bracket. The "1" is for a "High Chance" Swing Voter and the "0" is for a "Low Chance" Swing Voter. We broke down ages like this because this is how polling and the political industry buckets ages for audience targeting. This graph highlights that voters between ages of 25-54 have the most voters proportional to highly partisan voters. Specifically, voters between 25-44 have the highest proportionality and if you're spending money communicating with Swing Voters, this age group would be the most cost efficient. On the ither side of that, voters over the age of 65 would be the most inefficient. We presume this age disparity of swing voters is likely because as people get older they are more likely to get set in their ways and are harder to persuade or unlikely to change their minds, especially on a topic that invokes such hostility like politics.   
+The graph above looks at the relationship between number of Swing Voters fall in each age bracket. The "1" is for a "High Chance" Swing Voter and the "0" is for a "Low Chance" Swing Voter. We broke down ages like this because this is how polling and the political industry buckets ages for audience targeting. This graph highlights that voters between ages of 25-54 have the most voters proportional to highly partisan voters. Specifically, voters between 25-44 have the highest proportionality and if you're spending money communicating with Swing Voters, this age group would be the most cost efficient. On the ither side of that, voters over the age of 65 would be the most inefficient. We presume this age disparity of swing voters is likely because as people get older they are more likely to get set in their ways and are harder to persuade or unlikely to change their minds, especially on a topic that invokes such hostility like politics.  
 
-# Machine Learning model
+![Swing_Gender](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/SwingVoter_Sex.PNG)
 
-Click here to view our code: [Legislative_Districts_MachineLearning](https://github.com/leomerits/Arizona_Election_Project/blob/Franklin/Machine_learning/District13_ML_logisticregresion.ipynb)
+This graph demostrates to us the correlation between gender and Swing Voters. For instance, there is high-density of women clustering between the voter scores of 45 and 55, which is the sweet spot for identifying the most likely Swing Voters. Additionally, this graph also reinforces the prior bar graph with the relationship between age and Swing Voters, particularly that most Swing Voters are below the age of 55.
+
+## Machine Learning Model
+
+Click here to view our code: [Legislative_Districts_Machine_Learning](https://github.com/leomerits/Arizona_Election_Project/blob/Franklin/Machine_learning/District13_ML_logisticregresion.ipynb)
 
 
 - Prelinimary data: As describe above our preliminary raw file was provided by the Arizona democratic party and it contain 95 columns many which contain nan or null values. Before feeding our machinve learning model we agree to drop most of the columns for analysis from the start. We encounter an issue with our target column which was a range from 1 to 100 in percentages. this score is the likely hood of a voter being a split ticket voter. Fortounely we had access to what the score means, the score calculate the level of support towards the democratic party. The closer the score to 100 the more likely to vote democratic, on the opposite sepctrum the closer to 0 the more likely to vote only republican or other. After discussing with this team just by simple observation, we came to a assumption: "a score between 35% to 65% seem to be the range where voters are more likely to be split ticket voters. 
@@ -104,8 +108,8 @@ Click here to view our code: [Legislative_Districts_MachineLearning](https://git
 
 ## Communication Protocal
 
--	Incase of emergency, we all have each other’s cell number.
--	The team communication consists of communicating daily over our Getz_Team Slack channel. In addition to that we have been meeting over Zoom multiple times (at least four times a week including the Mondays and Wednesdays classes) Also, we have been meeting in teams of twos when needed, for instance Franklin and Darlington, Franklin and Raymond, Franklin and Josh had met in few other times besides the normal scheduled times. 
+-	In case of emergency, we all have each other’s cell number.
+-	The team communication consists of communicating daily over our Getz_Team Slack channel. In addition to that, we have been meeting over Zoom multiple times (at least four times a week including the Mondays and Wednesdays classes) Also, we have been meeting in teams of twos when needed, for instance Franklin and Darlington, Franklin and Raymond, Franklin and Josh had met in few other times besides the normal scheduled times. 
 
 ## DataBase Images:
 Primary Key set up:
