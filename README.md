@@ -101,9 +101,8 @@ This graph demostrates to us the correlation between gender and Swing Voters. Fo
 Click here to view our code: [Legislative_Districts_Machine_Learning](https://github.com/leomerits/Arizona_Election_Project/blob/Franklin/Machine_learning/District13_ML_logisticregresion.ipynb)
 
 
-- Prelinimary data: As described above, our preliminary raw file was provided by the Arizona democratic party and it contained 95 columns, many of which contained nan or null values. Before feeding our machinve learning model we agreed to drop most of the columns for analysis from the start. We encountered an issue with our target column as the column began as a "Voter Score" ranging between scores of 0 to 100. As mentioned, we converted this column into the "Swing Voter" column. 
-
-      - The Voter Score model is as follows:
+- Prelinimary data: As described above, our preliminary raw file was provided by the Arizona democratic party and it contained 95 columns, many of which contained nan or null values. Before feeding our machinve learning model we agreed to drop most of the columns for analysis from the start. We encountered an issue with our target column as the column began as a "Voter Score" ranging between scores of 0 to 100. As mentioned, we converted this column into the "Swing Voter" column. The Voter Score model is as follows:
+      
       - A Swing Voter is defined as a voter with a score between 35-65. The closer the score is to 50 the more likely they are to be truly independent voters that have a willingness to voter for both parties. 
       - If the score is between 0-34, then the voter is likely to vote Republican. The lower the voter score is the more partisan the voter is for Republican candidates and issues. 
       - If the voter score between the scores of 66-100, then the voter is likely to vote only Democratic. And the higher the score, then the more partisan the voter is for Democratic candidates and issues. 
