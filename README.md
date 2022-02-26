@@ -144,6 +144,9 @@ If you analyze the Arizona election studies and exit poll data over the last thr
 
 Our Arizona Election Project found
 
+
+![Important_Features](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Important_Model_Features.PNG)
+
 ### Challenges
 
 ## Google Slides
