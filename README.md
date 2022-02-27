@@ -46,8 +46,8 @@ The primary data source for this project will be the proprietary statewide voter
 
 In the execution of this project and our machine learning models, we hope to answer the following questions:
 
- - We hope to determine and classify which voters in each district are likely to be a split-ticket voter or so-called "Swing Voter". We are defining a Swing Voter as a voter that is registered as a Democrat, Republican or Other (Independent) that is likely to vote for both parties across their ballot. For example, a Swing Voter could be defined as a registered Republican that votes for a Democratic presidential candidate but votes for Republican congressional and state legislative candidates. In doing so, we will apply a binary classification predictive model with logistic regression.
- - We also hope to predict which voters of each of the four districts are likely to turn out in the 2022 election. We would likely do this as well with employing a binary classification predictive model with logistic regression. On another level, we hope to predict the likely percentage of voters in each district and the demographic composition to turnout in the 2022 election. 
+ - We hope to determine and idenitfy which voters in each district are likely to be so-called "Swing Voters". We are defining a Swing Voter as a voter, regardless of party registration, that has a history and willingness to vote for candidates from both the Republican and Democratic parties across their ballot. For example, a Swing Voter could be defined as a registered Republican that votes for a Democratic presidential candidate but votes for Republican congressional and state legislative candidates. In doing so, we will employ various supervised and unspervised machine learning models that can do this with the highest precision, recall, sensitivity and/or accuracy. with logistic regression.
+ - Additionally, we hope to identify which demographical and geographical attributes make up a Swing Voter in Arizona and, in particularly, which of those features are the most predictive. We will execute this through exploratory data analysis and various machine learning models. 
 
 ## Description of Data Exploration
 
@@ -90,23 +90,74 @@ The graph above illustrates another critical element about Swing Voters in our d
 
 ![Swing_Age](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Swing%20Voter_Age.png)
 
-This graph above looks at the relationship between number of Swing Voters fall in each age bracket. The "1" is for a "High Chance" Swing Voter and the "0" is for a "Low Chance" Swing Voter. We broke down ages like this because this is how polling and the political industry buckets ages for audience targeting. This graph highlights that voters between ages of 25-54 have the most voters proportional to highly partisan voters. Specifically, voters between 25-44 have the highest proportionality and if you're spending money communicating with Swing Voters, this age group would be the most cost efficient. On the ither side of that, voters over the age of 65 would be the most inefficient. We presume this age disparity of swing voters is likely because as people get older they are more likely to get set in their ways and are harder to persuade or unlikely to change their minds, especially on a topic that invokes such hostility like politics.   
+The graph above looks at the relationship between number of Swing Voters fall in each age bracket. The "1" is for a "High Chance" Swing Voter and the "0" is for a "Low Chance" Swing Voter. We broke down ages like this because this is how polling and the political industry buckets ages for audience targeting. This graph highlights that voters between ages of 25-54 have the most voters proportional to highly partisan voters. Specifically, voters between 25-44 have the highest proportionality and if you're spending money communicating with Swing Voters, this age group would be the most cost efficient. On the ither side of that, voters over the age of 65 would be the most inefficient. We presume this age disparity of swing voters is likely because as people get older they are more likely to get set in their ways and are harder to persuade or unlikely to change their minds, especially on a topic that invokes such hostility like politics.  
 
-# Machine Learning model
+![Swing_Gender](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/SwingVoter_Sex.PNG)
 
-Click here to view our code: [Legislative_Districts_Machine_Learning](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Legislative_Districts_MachineLearning.ipynb)
+This graph demostrates to us the correlation between gender and Swing Voters. For instance, there is high-density of women clustering between the voter scores of 45 and 55, which is the sweet spot for identifying the most likely Swing Voters. Additionally, this graph also reinforces the prior bar graph with the relationship between age and Swing Voters, particularly that most Swing Voters are below the age of 55.
+
+## Machine Learning Model
+
+Click here to view our code: [Legislative_Districts_Machine_Learning](https://github.com/leomerits/Arizona_Election_Project/blob/Franklin/Machine_learning/District13_ML_logisticregresion.ipynb)
 
 
-- Prelinimary data: As describe above our preliminary raw file was provided by the Arizona democratic party and it contain 95 columns many which contain nan or null values. Before feeding our machinve learning model we agree to drop most of the columns for analysis from the start. We encounter an issue with our target column which was a range from 1 to 100 in percentages. this score is the likely hood of a voter being a split ticket voter. Fortounely we had access to what the score means, the score calculate the level of support towards the democratic party. The closer the score to 100 the more likely to vote democratic, on the opposite sepctrum the closer to 0 the more likely to vote only republican or other. After discussing with this team just by simple observation, we came to a assumption: "a score between 40% to 60% seem to be the range where voters are more likely to be split ticket voters. 
-- Preliminary features: Our inital features were selected based after we drop most of our columns which cointain scores and data from previous years going back since 2016. All scores where product of other models run outside our project with different paramaters that we had no access to. Therefore we decided to drop all repeating columns, and score columns believing that feeding our model prediction scores from other models could errosnously create predictions in our model. Our features selections where mostly based on team communication, and also by running analyzis showing for example the represntation of each party in the district, gender and score and any correlations. Some of the columns that we end up droping where Voter ID since it is an individual number for each seperate data point.
-- Trainging and testing: For our training and testing data we also came into another issue and that was that we had object or quantitive data. We use get.dummies method to convert all of our features into numerical. Our target column was also converted by using a condition that would change our score between 40%-60% to Low-Chance and High-chance. We used a random state of 1 stratify= Y we used the default setting of the linear regression model to pick how many samples were to be used for training and for testing. We did intended to play with the n_estimators but it provided very little change in our model scores.
-- Modle Choice: We run several ML models to see which model will give us the best f1 score- since f1 score is the harmonic mean between precission and recall. Our team however cares more about the recall since we want to be able to advertise not only those who fall within the split ticker range but anyone who might be close to that range. At the end it seem Like a logistic regresion model using undersampling gave us a good satisfactory scores. Undersampling was required since the number of our target points was unmbalance.
+- **Prelinimary Data:** As described above, our preliminary raw file was provided by the Arizona democratic party and it contained 95 columns, many of which contained nan or null values. Before feeding our machinve learning model we agreed to drop most of the columns for analysis from the start. We encountered an issue with our target column as the column began as a "Voter Score" ranging between scores of 0 to 100. As mentioned, we converted this column into the "Swing Voter" column. The Voter Score model is as follows:
+      
+      - A Swing Voter is defined as a voter with a score between 35-65. The closer the score is to 50 the more likely they are to be a truly independent voter with a willingness to vote for both parties. 
+      - For scores between 0-34, the voter is likely to vote strictly Republican. The lower the score then the more partisan the voter is for Republican candidates/issues. 
+      - For scores between 66-100, the voter is likely to vote strictly Democratic. The higher the score then the more partisan the voter is for Democratic candidates/issues. 
+      - This Voter Score system derives from a sophisticated and robust model developed with proprietary, commercial, behavioral and public data by data analytics organizations such as TargetSmart, Catalist Institute and Analyst Instiute.
+  
+- **Preliminary features:** Our inital features were selected after we dropped most of our non-benficial columns cointaining scores and data from previous years going back to 2016. All scores were products of other models developed outside of our project. They had different paramaters with different objectives and from which a place we did not have access to the raw data. Therefore, we decided to drop all redundant columns, and score based columns that had differen objectives than our project and, if included, would dramatically disrupt our models efficacy. Our features were selected through weekly scheduled team zoom meetings, where we engaged in rigorous debate around the relevance and impact of each prospective feature. Furthermore, we ran numerous analyses with our intitial DataFrame to determine how voters were distributed by features such as Party, Sex, Ethnicity, Age, Turnout Scores, Zip Code and whether these voters had kids in their household. In additon to this, we also ran correlation analyses to see where features and our target had any noteworthy relationships, which is graphed above. In doing so, this exploratory data analysis was critical in building the structures of our maching learning models. And lastly, we ended up dropping the Voter ID column due to it being an unique number for each seperate data point.
+
+- **Trainging and Testing:** For our training and testing data we also came into another issue and that was that we had object or quantitive data. We use get.dummies method to convert all of our features into numerical. Our target column was also converted by using a condition that would change our score between 35%-65% to Low-Chance and High-chance. We used a random state of 1 stratify= Y we used the default setting of the linear regression model to pick how many samples were to be used for training and for testing. We did intended to play with the n_estimators but it provided very little change in our model scores.
+
+- **Model Choice:** We run several ML models to see which model will give us the best f1 score- since f1 score is the harmonic mean between precission and recall. Our team however cares more about the recall since we want to be able to advertise not only those who fall within the split ticker range but anyone who might be close to that range. At the end it seem Like a logistic regresion model using undersampling gave us a good satisfactory scores. Undersampling was required since the number of our target points was unmbalance. After discussing with team the decision was made right during segment 2 of our project. This was done with the purpose to give us time to focus more on presentation and dashboard.
+- **Current Model Results**
+- Our current model accuracy is 77% rounding up. As we understand Accuracy is the prediction of the model on how many actual high chance and actual low chance is able to predict. Since we are trying to predict the posibility of someone being a split ticket voter we focus more on recall and f1 score rather than accurary or precission. The results of our Classification report are as the image below:
+- 
+<img width="564" alt="Screen Shot 2022-02-26 at 7 47 35 PM" src="https://user-images.githubusercontent.com/90356052/155866157-0713a2af-84b6-4057-af88-fb0d66d8ecae.png">
+
+
+
+Click here to view where we ran 5-6 different supervised and unsupervised machine learning models: [Supervised_Exhaustion](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Legislative_Districts_MachineLearning.ipynb) | [More_Supervised](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Logistic_Regression_LD4.ipynb) | [Deep_Learning](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Deep_Learning_Neural_Network_LD4.ipynb) | [Unsupervised_K-Means](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/KMeans_Clusters_withPCA_LD4.ipynb)
 
 ## Communication Protocal
 
--	Incase of emergency, we all have each other’s cell number.
--	The team communication consists of communicating daily over our Getz_Team Slack channel. In addition to that we have been meeting over Zoom multiple times (at least four times a week including the Mondays and Wednesdays classes) Also, we have been meeting in teams of twos when needed, for instance Franklin and Darlington, Franklin and Raymond, Franklin and Josh had met in few other times besides the normal scheduled times. 
+-	In case of emergency, we all have each other’s cell number.
+-	The team communication consists of communicating daily over our Getz_Team Slack channel. In addition to that, we have been meeting over Zoom multiple times (at least four times a week including the Mondays and Wednesdays classes) Also, we have been meeting in teams of twos when needed, for instance Franklin and Darlington, Franklin and Raymond, Franklin and Josh had met in few other times besides the normal scheduled times. 
+
+## DataBase Images:
+Primary Key set up:
+
+<img width="368" alt="primarykeysetup" src="https://user-images.githubusercontent.com/90356052/155256559-45425e66-2731-456b-8b72-e818b75eeadf.png">
+
+two table set up:
+
+<img width="502" alt="Screen Shot 2022-02-22 at 8 21 52 PM" src="https://user-images.githubusercontent.com/90356052/155256860-f0ba399b-bd93-46a3-bb7b-8ead06c1bf7b.png">
+
+diagram table:
+
+<img width="502" alt="Screen Shot 2022-02-22 at 8 41 03 PM" src="https://user-images.githubusercontent.com/90356052/155258235-f26c9261-5172-411c-be7b-97cb34f15d45.png">
+
+## Conclusion
+
+### Assumptions
+
+If you analyze the Arizona election studies and exit poll data over the last three election cycles of 2016, 2018 and 2020, regardless of what party won the state that cycle, the victor won by less than 4 points. This is what determines Arizona a battleground state, meaning each party has a near equal shot at winning this state - and this translates to the elections held at our legislative level. Given it is this close, whatever party persuades these so called Swing Voters, then that party will win the State, as well as take majority control over the legislature. These studies and polling data have perpetuated that these Swing Voters mostly made up of college-educated women over the age of 35, are registered Republican and reside entirely in Maricopa County suburbs. Having said that, these studies and exit polling do not employ rigorously scientific methodologies. Additionally, with American politics becoming more hyper-partisan and polarized over the last twenty years, the so-called Swing Voter voting bloc has shrunk to half of what it was at the start of the 21st Century. All this led to pose the question of "are we able to create an effective machine learning model that identifies Swing Voters in four of Arizona's competitive legislative districs?" "And if so, does our model and analyses reinforce the assumptions of Swing Voter attributes or does it counter the assumptions?" Should we be able to not only predict Swing Voters with our model and the most importatn features in doing so, then this project would be significantly beneficial to both the Republican or Democratic parties. The same Swing Voters we are seeking to identify in these legislative districts, are also the ones needed to win statewide by Presidential, Gubernatorial and the 4 other statewide candidates.
+
+### Findings
+
+As we engaged in data analysis and machine learning models with the four competitive legislative districts, we learned a great deal about Swing Voters in Arizona. In fact, some analysis and machine learning reasserted the assumptions we had at the inception of our Swing Voters analysis. The findings that reinforced the assumptions were the following:
+
+   - 
+
+
+![Important_Features](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Important_Model_Features.PNG)
+
+### Challenges
 
 ## Google Slides
 
-Click here for initial draft of Google Slides presentation: [Slide Presentation](). Please note this is only an early draft. 
+Click here for initial draft of Google Slides draft of presentation (Please note this is an early, early draft): [Dashboard mockup](https://docs.google.com/presentation/d/1niBqt4rMpW65NBb7cFWH2UJPZE_gq36iIZQ91IrVoC0/edit#slide=id.g1147b030573_0_1) | [Draft Presentation](https://docs.google.com/presentation/d/1kg2Wtakuq2NBjBmaiVa10OS5loL1bqqo6kbOCEo29Kk/edit#slide=id.p)
+ 
