@@ -69,7 +69,7 @@ diagram table:
 
 <img width="502" alt="Screen Shot 2022-02-22 at 8 41 03 PM" src="https://user-images.githubusercontent.com/90356052/155258235-f26c9261-5172-411c-be7b-97cb34f15d45.png">
 
-Click here for data exploration, preprocessing and transformation: [Cells 1-15](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Logistic_Regression_LD4.ipynb)
+Click here for data exploration, preprocessing and transformation: [Cells 1-15](https://github.com/leomerits/Arizona_Election_Project/blob/main/DRAFTS/Logistic_Regression_LD4.ipynb)
 
 In acquiring the proprietary voter data, we linked up our voter tables with a db_string connection. Firstly, we identified the columns that are either irrelevant or non-benifical to answering our Swing Voter question. Therefore, we dropped these columns in the vetting and cleaning stage of the DataFrame:
 
