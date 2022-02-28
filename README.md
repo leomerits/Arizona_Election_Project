@@ -59,7 +59,7 @@ In the execution of this project and our machine learning models, we hope to ans
 ### DataBase Images:
 We created our Databse using Pgadmin PostgreSQL 11 by first importing our raw data csv files into our code in jupyter notebook. This could help us clean and merge our 4 districts into one and finally exporting the new dataset to our dataframe. 
 
-![Creating Tables Code](https://github.com/leomerits/Arizona_Election_Project/blob/main/District_cleaning_analyzing/13_Analytics%20code/Cleaning_data.ipynb)
+Click here to view our creating [Tables Code](https://github.com/leomerits/Arizona_Election_Project/blob/main/District_cleaning_analyzing/13_Analytics%20code/Cleaning_data.ipynb)
 
 Primary Key set up:
 
