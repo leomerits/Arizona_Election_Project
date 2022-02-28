@@ -87,30 +87,30 @@ Given our objective of idenitying Swing Voters via machine learning and what fea
 
 ![Conditions_SwingVoter](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Conditions_Create_SwingVoter.PNG)
 
-![Chance_Values](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/HighLowChance_Values.PNG)
+![Chance_Values](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/HighLowChance_Values.PNG)
 
 ## Data Analysis
 
 We installed Lux to help us with some of our exploratory data analysis and create data visializations. To do so, we had to "pip install" on our terminal "Alstair, Matplotlib (already did) and Scipy." Additonally, we had to activate the jupyter extension to run on Jupyter Notebook with the following code: "jupyter nbextension install --py luxwidget jupyter nbextension enable --py luxwidget." We then ran some specific queries with key features and targets to create some visualizations of correlations, distributions and occurrence graphs in our districts.
 
-![Lux_Code](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Lux_Code.PNG)
+![Lux_Code](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Lux_Code.PNG)
 
 
 As a result, we learned a great deal about voters in our district, especially which features play an instrumental role in making up a Swing Voter.
 
-![Mean_Ethnicity_Swing](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Mean_SwingVoterScore_Ethnicity.PNG)
+![Mean_Ethnicity_Swing](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Mean_SwingVoterScore_Ethnicity.PNG)
 
 The graph above demonstrates that far and away "Caucasian" and "Uncoded"(meaning unknown) voters have a mean "Voter Scores" most aligned with what has been defined as a Swing Voter. This does not mean that every Caucasion or Uncoded voter are Swing Voters, rather that White voters have the largest range of "Voter Scores" compared to Hispanic, Black, Native American and Asian voters. This is true because Black and Hispanic voters heavily skew towards the Democratic party. If you look at registration numbers, Black and Hispanic voters are registered with the Democratic Party 91 and 67 percent respectively.
 
-![Swing_Party_Sex](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/SwingVoter_Age_Party.PNG)
+![Swing_Party_Sex](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/SwingVoter_Age_Party.PNG)
 
 The graph above illustrates another critical element about Swing Voters in our districts. Over the last 20 years, Arizona politics like National politics has become more and more tribal. If you're a Democrat, you must be registered as a Democrat and vote for Democrats unconditionally and vise versa for Republicans. This graph shows that most Democrats have scores between 66-100 while most Republicans have scores between 0-34, regardless of age. As for Others/Independents, they do in fact fall in between the scores of 35-65, whereas roughly 5 percent of Democrats and Republicans are sprinkled in the Swing Voter scores of 35-65.
 
-![Swing_Age](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/IMAGES/Swing%20Voter_Age.png)
+![Swing_Age](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Swing%20Voter_Age.png)
 
 The graph above looks at the relationship between number of Swing Voters fall in each age bracket. The "1" is for a "High Chance" Swing Voter and the "0" is for a "Low Chance" Swing Voter. We broke down ages like this because this is how polling and the political industry buckets ages for audience targeting. This graph highlights that voters between ages of 25-54 have the most voters proportional to highly partisan voters. Specifically, voters between 25-44 have the highest proportionality and if you're spending money communicating with Swing Voters, this age group would be the most cost efficient. On the ither side of that, voters over the age of 65 would be the most inefficient. We presume this age disparity of swing voters is likely because as people get older they are more likely to get set in their ways and are harder to persuade or unlikely to change their minds, especially on a topic that invokes such hostility like politics.  
 
-![Swing_Gender](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/IMAGES/SwingVoter_Sex.PNG)
+![Swing_Gender](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/SwingVoter_Sex.PNG)
 
 This graph demostrates to us the correlation between gender and Swing Voters. For instance, there is high-density of women clustering between the voter scores of 45 and 55, which is the sweet spot for identifying the most likely Swing Voters. Additionally, this graph also reinforces the prior bar graph with the relationship between age and Swing Voters, particularly that most Swing Voters are below the age of 55.
 
