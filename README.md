@@ -57,6 +57,10 @@ In the execution of this project and our machine learning models, we hope to ans
 ## Description of Data Exploration
 
 ### DataBase Images:
+We created our Databse using Pgadmin PostgreSQL 11 by first importing our raw data csv files into our code in jupyter notebook. This could help us clean and merge our 4 districts into one and finally exporting the new dataset to our dataframe. 
+
+![Creating our tables code](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Initial_DataFrame.PNG)
+
 Primary Key set up:
 
 <img width="368" alt="primarykeysetup" src="https://user-images.githubusercontent.com/90356052/155256559-45425e66-2731-456b-8b72-e818b75eeadf.png">
