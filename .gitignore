@@ -8,6 +8,7 @@ config.py
 
 # C extensions
 *.so
+config.py
 
 # Sensitive Files
 config.py
