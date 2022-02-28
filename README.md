@@ -141,7 +141,7 @@ Click here to view our code: [Legislative_Districts_Machine_Learning](https://gi
 <img width="564" alt="Screen Shot 2022-02-26 at 7 47 35 PM" src="https://user-images.githubusercontent.com/90356052/155866157-0713a2af-84b6-4057-af88-fb0d66d8ecae.png">
 
 
-Click here to view where we ran 7 different supervised and unsupervised machine learning models: [Supervised_Exhaustion](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Legislative_Districts_MachineLearning.ipynb) | [More_Supervised](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Logistic_Regression_LD4.ipynb) | [Deep_Learning](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Deep_Learning_Neural_Network_LD4.ipynb) | [Unsupervised_K-Means](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/KMeans_Clusters_withPCA_LD4.ipynb)
+Click here to view where we ran 7 different supervised and unsupervised machine learning models: [Supervised_Exhaustion](https://github.com/leomerits/Arizona_Election_Project/blob/main/DRAFTS/Legislative_Districts_MachineLearning.ipynb) | [More_Supervised](https://github.com/leomerits/Arizona_Election_Project/blob/main/DRAFTS/Logistic_Regression_LD4.ipynb) | [Deep_Learning](https://github.com/leomerits/Arizona_Election_Project/blob/main/DRAFTS/Deep_Learning_Neural_Network_LD4.ipynb) | [Unsupervised_K-Means](https://github.com/leomerits/Arizona_Election_Project/blob/main/DRAFTS/KMeans_Clusters_withPCA_LD4.ipynb)
 
 
 ## Conclusion
