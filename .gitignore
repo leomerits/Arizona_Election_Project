@@ -133,3 +133,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Resources Folder
+Resources
+Arizona_Elections_Deep_Learning_Neural_Network.ipynb
+
+# Config File
+config.py
