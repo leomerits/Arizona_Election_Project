@@ -9,6 +9,9 @@ config.py
 # C extensions
 *.so
 
+# Sensitive Files
+config.py
+Resources
 # Distribution / packaging
 .Python
 build/
