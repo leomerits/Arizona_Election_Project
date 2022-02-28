@@ -172,5 +172,5 @@ In preparing, analyzing and running machine learning models with this data, we e
 
 ## Google Slides
 
-Click here for initial draft of Google Slides draft of presentation: [Dashboard](https://docs.google.com/presentation/d/1niBqt4rMpW65NBb7cFWH2UJPZE_gq36iIZQ91IrVoC0/edit#slide=id.g1147b030573_0_1) | [Presentation](https://docs.google.com/presentation/d/1kg2Wtakuq2NBjBmaiVa10OS5loL1bqqo6kbOCEo29Kk/edit#slide=id.p)
+Click here for the Getz_Team Google Slides dashboard and presentation: [Dashboard](https://docs.google.com/presentation/d/1niBqt4rMpW65NBb7cFWH2UJPZE_gq36iIZQ91IrVoC0/edit#slide=id.g1147b030573_0_1) | [Presentation](https://docs.google.com/presentation/d/1kg2Wtakuq2NBjBmaiVa10OS5loL1bqqo6kbOCEo29Kk/edit#slide=id.p)
  
