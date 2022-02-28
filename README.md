@@ -85,7 +85,7 @@ Thereafter we converted some dtypes from "Float64" to "Int" and removing all NaN
 
 Given our objective of idenitying Swing Voters via machine learning and what features are most important and precitive in doing so, we had to identify and define Swing Voters. To that end, we used the "Voter Score" model of scoring Republican, Other(Independent) and Democrative voters between 0-100. Voters that are scored between 0-34 are highly likely to vote Republican with the lower the score the more likely they are to do so. On the other end, voters scoring between 66 and 100 are more likely to vote Democratic, again with the higher the score the increase in likelihood. And for voters that score between 35-65, they are likely to vote for both parties candidates, regardless of what party they are registered with. In this case, the closer they are to the score 50 the more liely they are a truly Independent or Swing Voter. To do our exploratory analysis, we created a list of conditions to assign each voter a new value based on the "Voter Score." Subsequently, we created a new "Swing Voter" column and assigned a "Low_Chance" and "High-Chance" value to each voter and moving forward drop the "Voter Score" column. 
 
-![Conditions_SwingVoter](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/Conditions_Create_SwingVoter.PNG)
+![Conditions_SwingVoter](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Conditions_Create_SwingVoter.PNG)
 
 ![Chance_Values](https://github.com/leomerits/Arizona_Election_Project/blob/Josh/HighLowChance_Values.PNG)
 
