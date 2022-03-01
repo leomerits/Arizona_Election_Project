@@ -80,12 +80,7 @@ In acquiring the proprietary voter data, we linked up our voter tables with a db
 
 Thereafter, we converted some dtypes from "Float64" to "Int" and removed all NaN or Null values. Additionally, we simplified the header name of "Partisan Score" to "Voter Score" so it would be clear to our audience what it stands for and how we are applying the scoring system.
 
-![Initial DataFrame](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Initial_DataFrame.PNG)
- 
-
-![Conditions_SwingVoter](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Conditions_Create_SwingVoter.PNG)
-
-![Chance_Values](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/HighLowChance_Values.PNG)
+![Initial DataFrame](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Initial_DataFrame.PNG) 
 
 ## Data Analysis
 
