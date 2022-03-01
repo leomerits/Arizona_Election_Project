@@ -21,7 +21,7 @@ Secondly, we find voter behavior interesting. According to numerous recent elect
 
 ## Description of Our Data Sources
 
-The primary data source for this project will be the proprietary statewide voter file provided from the Arizona Democratic Party. While the access to this data is from by a partisan organization, the data itself is neutral. As mentioned, each district consists of 120,000 registered voters. Thus, our model will be compiled of roughly 720,000 rows of data. The initial database will have the following columns: 
+The primary data source for this project will be the proprietary statewide voter file provided from the Arizona Democratic Party. While the access to this data is from by a partisan organization, the data itself is neutral. As mentioned, each district consists of 90,000 to 140,000 registered voters. Thus, our model will be compiled of nearly 500,000 rows of data. The initial database will have the following columns: 
 
  - Voter registration ID
  - Voter ID 
@@ -78,12 +78,10 @@ In acquiring the proprietary voter data, we linked up our voter tables with a db
   - Congressional and legislative district (We are doing our analysis and ML by leg district so there was no benefit leaving these columns in)
   - Phone Number
 
-Thereafter we converted some dtypes from "Float64" to "Int" and removing all NaN or Null values. Additionally, we simplified the header name of "Partisan Score" to "Voter Score" so it would clear to our audience what this is and how we are using, which will be addressed shortly.
+Thereafter, we converted some dtypes from "Float64" to "Int" and removed all NaN or Null values. Additionally, we simplified the header name of "Partisan Score" to "Voter Score" so it would be clear to our audience what it stands for and how we are applying the scoring system.
 
 ![Initial DataFrame](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Initial_DataFrame.PNG)
-
-
-Given our objective of idenitying Swing Voters via machine learning and what features are most important and precitive in doing so, we had to identify and define Swing Voters. To that end, we used the "Voter Score" model of scoring Republican, Other(Independent) and Democrative voters between 0-100. Voters that are scored between 0-34 are highly likely to vote Republican with the lower the score the more likely they are to do so. On the other end, voters scoring between 66 and 100 are more likely to vote Democratic, again with the higher the score the increase in likelihood. And for voters that score between 35-65, they are likely to vote for both parties candidates, regardless of what party they are registered with. In this case, the closer they are to the score 50 the more liely they are a truly Independent or Swing Voter. To do our exploratory analysis, we created a list of conditions to assign each voter a new value based on the "Voter Score." Subsequently, we created a new "Swing Voter" column and assigned a "Low_Chance" and "High-Chance" value to each voter and moving forward drop the "Voter Score" column. 
+ 
 
 ![Conditions_SwingVoter](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Conditions_Create_SwingVoter.PNG)
 
@@ -103,12 +101,16 @@ As a result, we learned a great deal about voters in our district, especially wh
 Click here to view our code: [Legislative_Districts_Machine_Learning](https://github.com/leomerits/Arizona_Election_Project/blob/Franklin/Machine_learning/District13_ML_logisticregresion.ipynb)
 
 
-- **Prelinimary Data:** As described above, our preliminary raw file was provided by the Arizona democratic party and it contained 95 columns, many of which contained nan or null values. Before feeding our machinve learning model we agreed to drop most of the columns for analysis from the start. We encountered an issue with our target column as the column began as a "Voter Score" ranging between scores of 0 to 100. As mentioned, we converted this column into the "Swing Voter" column. The Voter Score model is as follows:
+- **Prelinimary Data:** Given our objective is idenitying Swing Voters via machine learning and,particularly, what features are most important in predicting them, we had to first define Swing Voters. To that end, we used the "Voter Score" model that scores all Republican, Other (Independent) and Democratic voters between 0 to 100. The preliminary raw data file was provided by the Arizona democratic party and it contained a total of 95 columns, many of which contained nan or null values. Before feeding our machine learning model, we agreed to drop most of the columns for analysis from the start. To do our exploratory analysis, we created a list of conditions to assign each voter a new value based on the "Voter Score." Subsequently, we created a new "Swing Voter" column and assigned a each voter of either having a "Low_Chance" or "High-Chance" value of being a Swing Voter. Moving forward we dropped the "Voter Score" column as we converted this column into the "Swing Voter" column. The Voter Score model is as follows:
       
       - A Swing Voter is defined as a voter with a score between 35-65. The closer the score is to 50 the more likely they are to be a truly independent voter with a willingness to vote for both parties. 
       - For scores between 0-34, the voter is likely to vote strictly Republican. The lower the score then the more partisan the voter is for Republican candidates/issues. 
       - For scores between 66-100, the voter is likely to vote strictly Democratic. The higher the score then the more partisan the voter is for Democratic candidates/issues. 
       - This Voter Score system derives from a sophisticated and robust model developed with proprietary, commercial, behavioral and public data by data analytics organizations such as TargetSmart, Catalist Institute and Analyst Instiute.
+
+![Conditions_SwingVoter](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/Conditions_Create_SwingVoter.PNG)
+
+![Chance_Values](https://github.com/leomerits/Arizona_Election_Project/blob/main/IMAGES/HighLowChance_Values.PNG)
   
 - **Preliminary features:** Our inital features were selected after we dropped most of our non-benficial columns cointaining scores and data from previous years going back to 2016. All scores were products of other models developed outside of our project. They had different paramaters with different objectives and from which a place we did not have access to the raw data. Therefore, we decided to drop all redundant columns, and score based columns that had differen objectives than our project and, if included, would dramatically disrupt our models efficacy. Our features were selected through weekly scheduled team zoom meetings, where we engaged in rigorous debate around the relevance and impact of each prospective feature. Furthermore, we ran numerous analyses with our intitial DataFrame to determine how voters were distributed by features such as Party, Sex, Ethnicity, Age, Turnout Scores, Zip Code and whether these voters had kids in their household. In additon to this, we also ran correlation analyses to see where features and our target had any noteworthy relationships, which is graphed above. In doing so, this exploratory data analysis was critical in building the structures of our maching learning models. And lastly, we ended up dropping the Voter ID column due to it being an unique number for each seperate data point.
 
