@@ -149,5 +149,5 @@ In preparing, analyzing and running machine learning models with this data, we e
 
 ## Google Slides
 
-Click here for the Getz_Team Google Slides dashboard and presentation: [Dashboard](https://public.tableau.com/app/profile/josh.zaragoza#!/ | [Presentation](https://docs.google.com/presentation/d/1kg2Wtakuq2NBjBmaiVa10OS5loL1bqqo6kbOCEo29Kk/edit#slide=id.p)
+Click here for the Getz_Team Google Slides dashboard and presentation: [Dashboard](https://public.tableau.com/app/profile/josh.zaragoza/viz/ArizonaSwingVoterAnalysis/ArizonaSwingVoterAnalysis) | [Presentation](https://docs.google.com/presentation/d/1kg2Wtakuq2NBjBmaiVa10OS5loL1bqqo6kbOCEo29Kk/edit#slide=id.g1180f13eba3_3_0)
  
